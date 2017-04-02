@@ -92,6 +92,21 @@ struct Matrix {
 	}
 
 	/*
+	 * Finds the lowest number in a matrix.
+	 */
+
+	double min()
+	{
+		double min = this->data[0][0];
+		for(int i = 0; i < this->h; i++)
+			for(int j = 0; j < this->w; j++)
+				if(this->data[i][j] < min) {
+					min = this->data[i][j];
+				}
+		return min;
+	}
+
+	/*
 	 * Calculates the sum of all elements in a matrix.
 	 */
 
