@@ -2,7 +2,7 @@ This is a matrix library for c++.
 
 Example usage:
 
-```
+```c++
 // Creates a matrix
 Matrix m = Matrix::create({
   {0, 1},
